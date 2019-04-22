@@ -26,7 +26,7 @@ class App extends Component {
           style={segmentStyle}
         >
           <Segment basic style={{ marginTop: 100, minHeight: window.innerHeight - 140 }}>
-            <Segment basic style={{ width: 400 }}>
+            <Segment basic style={{ width: 400, margin: 'auto' }}>
               <Message
                 success
                 style={{ marginBottom: 100 }}
