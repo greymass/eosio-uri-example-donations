@@ -37,9 +37,9 @@ export default async function generateURI(donationAmount, donationRecipient) {
     actions: [{
       account: 'eosio.token',
       name: 'transfer',
-      authorization: [{ actor: '1111111111', permission: 'active' }],
+      authorization: [{ actor: '...........1', permission: 'active' }],
       data: {
-        from: '11111111111',
+        from: '...........1',
         to: donationRecipient,
         quantity: donationAmount,
         memo: 'donation',
