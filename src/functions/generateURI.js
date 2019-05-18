@@ -41,7 +41,7 @@ export default async function generateURI(donationAmount, donationRecipient) {
       data: {
         from: '...........1',
         to: donationRecipient,
-        quantity: donationAmount,
+        quantity: `${parseFloat(donationAmount).toFixed(4)} EOS`,
         memo: 'donation',
       }
     }]
