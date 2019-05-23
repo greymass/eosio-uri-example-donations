@@ -33,15 +33,14 @@ const opts = {
 
 export default async function generateURI(donationAmount, donationRecipient) {
   let req = await SigningRequest.create({
-    callback: 'https://dapp.greymass.com',
     actions: [{
       account: 'eosio.token',
       name: 'transfer',
-      authorization: [{ actor: '...........1', permission: 'active' }],
+      authorization: [{ actor: '............1', permission: '............1' }],
       data: {
-        from: '...........1',
+        from: '............1',
         to: donationRecipient,
-        quantity: donationAmount,
+        quantity: `${parseFloat(donationAmount).toFixed(4)} EOS`,
         memo: 'donation',
       }
     }]
